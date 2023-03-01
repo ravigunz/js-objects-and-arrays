@@ -7,13 +7,24 @@
     <title>JavaScript Objects & Arrays</title>
   </head>
   <body>
-    <input type="text" id="myInput" />
-
     <script>
-      let myInput = document.querySelector("#myInput");
-      myInput.addEventListener("change", function () {
-        console.log("change");
-      });
+
+    const address = {
+        number: '214/49',
+        village: 'Kottala',
+        city: 'Veyangoda',
+        postalCode: '11100',
+        country: 'Sri Lanka'
+    };
+
+    let person = {};
+    person = {
+        firstName: 'Ravi',
+        lastName: 'Gunasena',
+        address: address,
+        skills:['HTML','CSS','JavaScript','ReactJS']
+    };
+        console.log(person.skills[1]);
     </script>
   </body>
 </html>
